@@ -50,7 +50,6 @@ def logout():
     response = make_response(redirect(url_for('index')))
     response.set_cookie('session_token', '', -1)
 
-
     return response
 
 
